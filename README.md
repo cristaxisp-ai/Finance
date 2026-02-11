@@ -1,37 +1,37 @@
 
-# FinancePro - Controle Financeiro Pessoal
+# FinancePro - Controle Financeiro Manual
 
-Um aplicativo mobile-first intuitivo e focado no uso diário para gestão de finanças pessoais e produtividade.
+Um aplicativo mobile-first focado em **soberania financeira**. Aqui não há algoritmos, automações ou inteligência artificial. Você tem o controle total e manual de cada centavo.
+
+## 🚫 100% Livre de IA
+Este projeto foi construído sob a filosofia de controle absoluto pelo usuário:
+- **Sem Categorização Automática**: Você decide onde cada gasto se encaixa.
+- **Sem Sugestões Algorítmicas**: O planejamento é fruto da sua disciplina.
+- **Privacidade Total**: Nenhum dado é enviado para processamento de terceiros ou modelos de IA. Tudo fica no seu dispositivo.
 
 ## 🚀 Funcionalidades
 
-- **Dashboard Inteligente**: Resumo diário, semanal e mensal de receitas e despesas.
-- **Extrato Dinâmico**: Gestão de lançamentos com gestos (Swipe to Delete/Edit).
-- **Rotina Diária**: Planejamento de metas por horários (ex: produção, conferência de caixa).
-- **Gestão de Metas**: Acompanhamento de objetivos de curto, médio e longo prazo com barras de progresso.
-- **Multi-contas**: Controle de saldo em diversas carteiras e bancos.
-- **Offline First**: Seus dados são salvos localmente no seu dispositivo.
+- **Dashboard Analítico**: Resumo real de receitas e despesas baseado nos seus lançamentos manuais.
+- **Extrato Dinâmico**: Gestão de lançamentos com gestos (Arraste para excluir/editar).
+- **Plano Diário de Produção**: Metas por horários para organizar sua rotina de ganhos (ex: encher sacolas de dinheiro).
+- **Gestão de Metas**: Acompanhamento matemático de objetivos com barras de progresso.
+- **Multi-contas**: Controle de saldo em diversas carteiras e bancos de forma isolada.
+- **Offline First**: Armazenamento local via LocalStorage.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **React 19**
 - **TypeScript**
-- **Tailwind CSS** (Estilização)
+- **Tailwind CSS**
 - **Lucide React** (Ícones)
-- **Date-fns** (Manipulação de datas)
-- **Recharts** (Gráficos de análise)
+- **Date-fns** (Datas)
+- **Recharts** (Gráficos matemáticos)
 
 ## 📱 Como rodar o projeto
 
-O projeto utiliza módulos ES6 diretamente no navegador via `esm.sh`. Para rodar localmente:
+1. Clone o repositório.
+2. `npm install`
+3. `npm run dev` (Vite)
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/financepro.git
-   ```
-2. Abra o arquivo `index.html` em um servidor local (ex: Live Server do VS Code).
-
-## 💡 Gestos e Atalhos
-
-- **Excluir/Editar**: No extrato, arraste qualquer item para a esquerda para revelar as opções de gerenciamento.
-- **Nova Transação**: Clique no botão flutuante "+" disponível em todas as abas.
+## 💡 Filosofia de Uso
+O FinancePro é para quem acredita que a disciplina vem do registro consciente. Ao anotar manualmente cada transação, você ganha consciência sobre seus hábitos que nenhuma IA poderia proporcionar.

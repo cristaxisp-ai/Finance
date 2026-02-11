@@ -1,5 +1,5 @@
 {
-  "name": "FinancePro - Controle Financeiro Pessoal",
-  "description": "Um aplicativo intuitivo para gestão de finanças, focado no acompanhamento diário de receitas, despesas, transferências e metas financeiras com resumos claros e detalhados.",
+  "name": "FinancePro - Controle Financeiro Manual",
+  "description": "Um aplicativo focado no registro consciente e manual de finanças. Sem IA, sem automações, apenas você e seu controle financeiro real.",
   "requestFramePermissions": []
 }

@@ -68,12 +68,10 @@ const SummaryCard: React.FC<{ title: string, data: SummaryData, icon: React.Reac
 
 const Dashboard: React.FC<DashboardProps> = ({ transactions, accounts }) => {
   const now = new Date();
-  // String de hoje no formato local AAAA-MM-DD
   const todayStr = format(now, 'yyyy-MM-dd');
 
   const getSummary = (period: 'day' | 'week' | 'month'): SummaryData => {
     return transactions.reduce((acc, t) => {
-      // Data da transação parseada com segurança
       const tDate = parseISO(t.date);
       const tDateStr = format(tDate, 'yyyy-MM-dd');
       
@@ -113,8 +111,8 @@ const Dashboard: React.FC<DashboardProps> = ({ transactions, accounts }) => {
 
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <div className="bg-gradient-to-br from-indigo-600 to-violet-700 p-6 rounded-3xl shadow-xl shadow-indigo-200 text-white flex flex-col items-center">
-        <p className="text-indigo-100 text-xs font-semibold uppercase tracking-widest mb-1">Balanço de Hoje</p>
+      <div className="bg-gradient-to-br from-slate-700 to-slate-900 p-6 rounded-3xl shadow-xl shadow-slate-200 text-white flex flex-col items-center">
+        <p className="text-slate-300 text-xs font-semibold uppercase tracking-widest mb-1">Registro Manual de Hoje</p>
         <h2 className="text-4xl font-black mb-4">
           {formatCurrency(daily.balance)}
         </h2>
@@ -123,14 +121,14 @@ const Dashboard: React.FC<DashboardProps> = ({ transactions, accounts }) => {
           <div className="flex-1 bg-white/10 backdrop-blur-sm p-3 rounded-2xl flex items-center gap-3">
             <div className="p-2 bg-emerald-400/20 rounded-xl text-emerald-400"><TrendingUp size={20} /></div>
             <div>
-              <p className="text-[10px] text-white/60">Ganhos Hoje</p>
+              <p className="text-[10px] text-white/60">Ganhos</p>
               <p className="text-sm font-bold">{formatCurrency(daily.income)}</p>
             </div>
           </div>
           <div className="flex-1 bg-white/10 backdrop-blur-sm p-3 rounded-2xl flex items-center gap-3">
             <div className="p-2 bg-rose-400/20 rounded-xl text-rose-400"><TrendingDown size={20} /></div>
             <div>
-              <p className="text-[10px] text-white/60">Gastos Hoje</p>
+              <p className="text-[10px] text-white/60">Gastos</p>
               <p className="text-sm font-bold">{formatCurrency(daily.expense)}</p>
             </div>
           </div>
@@ -147,8 +145,8 @@ const Dashboard: React.FC<DashboardProps> = ({ transactions, accounts }) => {
 
       <div className="space-y-4">
         <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-          <CalendarRange size={20} className="text-indigo-600" />
-          Resumos de Período
+          <CalendarRange size={20} className="text-slate-600" />
+          Análise Matemática de Período
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -159,7 +157,7 @@ const Dashboard: React.FC<DashboardProps> = ({ transactions, accounts }) => {
 
       <div className="p-4 bg-white border border-slate-100 rounded-2xl shadow-sm text-center">
         <p className="text-slate-400 text-[10px] uppercase font-bold tracking-widest">
-          Sincronizado: {format(now, 'dd/MM/yyyy HH:mm')}
+          Sincronizado Localmente: {format(now, 'dd/MM/yyyy HH:mm')}
         </p>
       </div>
     </div>
