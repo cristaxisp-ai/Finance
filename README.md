@@ -1,11 +1,37 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# FinancePro - Controle Financeiro Pessoal
 
-  <h1>Built with AI Studio</h2>
+Um aplicativo mobile-first intuitivo e focado no uso diário para gestão de finanças pessoais e produtividade.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Funcionalidades
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **Dashboard Inteligente**: Resumo diário, semanal e mensal de receitas e despesas.
+- **Extrato Dinâmico**: Gestão de lançamentos com gestos (Swipe to Delete/Edit).
+- **Rotina Diária**: Planejamento de metas por horários (ex: produção, conferência de caixa).
+- **Gestão de Metas**: Acompanhamento de objetivos de curto, médio e longo prazo com barras de progresso.
+- **Multi-contas**: Controle de saldo em diversas carteiras e bancos.
+- **Offline First**: Seus dados são salvos localmente no seu dispositivo.
 
-</div>
+## 🛠️ Tecnologias Utilizadas
+
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS** (Estilização)
+- **Lucide React** (Ícones)
+- **Date-fns** (Manipulação de datas)
+- **Recharts** (Gráficos de análise)
+
+## 📱 Como rodar o projeto
+
+O projeto utiliza módulos ES6 diretamente no navegador via `esm.sh`. Para rodar localmente:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/financepro.git
+   ```
+2. Abra o arquivo `index.html` em um servidor local (ex: Live Server do VS Code).
+
+## 💡 Gestos e Atalhos
+
+- **Excluir/Editar**: No extrato, arraste qualquer item para a esquerda para revelar as opções de gerenciamento.
+- **Nova Transação**: Clique no botão flutuante "+" disponível em todas as abas.
